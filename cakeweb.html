@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalyani sapkal</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        :root {
+            --swiper-navigation-size: 20px;
+        }
+
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        .page1 {
+
+            background-image: url(https://www.shutterstock.com/image-photo/celebration-birthday-cake-colorful-sprinkles-600nw-2275503965.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1400px;
+            width: 100%;
+
+
+        }
+
+        .page1>h1 {
+            font-size: 130px;
+            font-family: 'Ephesis', cursive;
+            text-align: center;
+            color: rgb(49, 6, 90);
+            transition: transform 0.7s;
+        }
+
+        .page1>h1:hover {
+            transform: scale(1.5);
+        }
+
+        .page1>#panel {
+            display: none;
+            font-size: 25px;
+        }
+
+        .page1>button {
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            background: transparent;
+            margin-left: 400px;
+            margin-top: 30px;
+        }
+
+        .page1>h3 {
+            font-size: 40px;
+            color: rgb(49, 6, 90);
+            margin-left: 17%;
+            margin-top: 30px;
+        }
+
+        .page1>h2 {
+            font-size: 35px;
+            margin-left: 19%;
+            margin-top: 1.5%;
+
+        }
+
+        .page1>img {
+            height: 80px;
+            position: absolute;
+            top: 14.6%;
+
+        }
+
+        .page1>ul {
+            color: rgb(48, 7, 87);
+            font-size: 20px;
+            margin-left: 18%;
+            margin-top: 2%;
+        }
+
+        .page1>img {
+            border-radius: 100%;
+            height: 40px;
+            margin-left: 17%;
+            margin-top: 60px;
+            display: block;
+        }
+
+        header>ul {
+            background-color: rgb(239, 234, 226);
+            height: 70px;
+            display: flex;
+            column-gap: 50px;
+            list-style: none;
+            font-size: 35px;
+            padding-left: 40px;
+            padding-top: 22px;
+        }
+
+        .categories {
+            position: relative;
+        }
+
+        .categories:hover .menu {
+            display: block;
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            width: 140px;
+            font-size: 25px;
+            background-color: rgb(202, 224, 202);
+            padding: 8px;
+
+        }
+
+        .flavours {
+            position: relative;
+
+        }
+
+        .flavours:hover .menu1 {
+            display: block;
+
+        }
+
+        .menu1 {
+            display: none;
+            position: absolute;
+            width: 220px;
+            font-size: 25px;
+            background-color: rgb(214, 160, 177);
+        }
+
+        .kids {
+            position: relative;
+        }
+
+        .kids:hover .menu2 {
+            display: block;
+        }
+
+        .menu2 {
+            display: none;
+            position: absolute;
+            width: 220px;
+            font-size: 25px;
+            background-color: rgb(219, 178, 211);
+        }
+
+        .trend {
+            position: relative;
+        }
+
+        .trend:hover .menu3 {
+            display: block;
+        }
+
+        .menu3 {
+            display: none;
+            position: absolute;
+            width: 230px;
+            font-size: 25px;
+            background-color: rgb(224, 214, 202);
+        }
+
+        .engage {
+            position: relative;
+        }
+
+        .engage:hover .menu4 {
+            display: block;
+        }
+
+        .menu4 {
+            display: none;
+            position: absolute;
+            width: 250px;
+            font-size: 25px;
+            background-color: rgb(194, 224, 227);
+        }
+
+        .annive {
+            position: relative;
+        }
+
+        .annive:hover .menu5 {
+            display: block;
+        }
+
+        .menu5 {
+            display: none;
+            position: absolute;
+            width: 270px;
+            font-size: 25px;
+            background-color: rgb(188, 167, 141);
+        }
+
+        .Special {
+            position: relative;
+        }
+
+        .Special:hover .menu6 {
+            display: block;
+        }
+
+        .menu6 {
+            display: none;
+            position: absolute;
+            width: 280px;
+            font-size: 25px;
+            background-color: rgb(183, 183, 159);
+        }
+
+        .head {
+            font-size: 50px;
+            font-family: 'DM Serif Display', serif;
+            background-color: beige;
+            text-align: center;
+            padding-top: 30px;
+        }
+
+        .swiper {
+            width: 800px;
+            height: 700px;
+            background-size: cover;
+            padding-top: 100px;
+        }
+
+        .swiper-slide>img {
+            height: 600px;
+            width: 1000px;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 300px 300px 300px;
+            column-gap: 110px;
+            row-gap: 90px;
+            background-color: rgb(241, 241, 227);
+            padding-left: 400px;
+            padding-top: 100px;
+        }
+
+        .card>img {
+            height: 250px;
+            width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.5);
+        }
+
+        .smthing>h1 {
+            width: 200px;
+            padding-left: 10px;
+        }
+
+        .smthing {
+            padding-left: 100px;
+            column-gap: 70px;
+            height: 80;
+            display: flex;
+            background-color: rgb(235, 219, 243);
+            padding-right: 400px;
+        }
+
+        .bake {
+            margin-top: 40px;
+            transition: all 0.6s;
+        }
+
+
+        .bake img {
+            transition: all 0.4s;
+        }
+
+        .bake img:hover {
+            transform: translateY(-40px);
+        }
+
+
+        .smthing2 {
+            display: flex;
+            padding-left: 0%;
+            column-gap: 20px;
+            background-color: rgb(244, 229, 210);
+        }
+
+        .smthing2>h1 {
+            font-size: 65px;
+            padding-left: 12%;
+            padding-top: 15px;
+            background-color: rgb(244, 229, 210);
+
+        }
+
+        .b4>img {
+            margin-top: 50px;
+            margin-left: 100px;
+        }
+
+
+
+        .b4>img {
+            transition: all 0.6s;
+
+        }
+
+        .b5>img {
+            transition: all 0.6s;
+            padding-top: 50px;
+        }
+
+        .b4>img:hover {
+            box-shadow: 6px 6px 6px gray;
+        }
+
+        .b5>img:hover {
+            box-shadow: 6px 6px 6px gray;
+        }
+
+        .last {
+            display: flex;
+            background-color: rgb(212, 233, 224);
+            padding-left: 250px;
+            padding-top: 100px;
+            column-gap: 200px;
+        }
+
+        .form {
+            font-size: 40px;
+            height: 600px;
+            width: 380px;
+
+        }
+        
+        input {
+            height: 40px;
+            font-size: 30px;
+            padding: 10px;
+        }
+
+        fieldset {
+            padding: 20px;
+        }
+
+        .swiper>h1 {
+            font-size: 50px;
+            margin-left: 25%;
+            padding-bottom: 30px;
+            padding-top: 40px;
+        }
+
+        .smthing>h1 {
+            font-size: 60px;
+            padding-left: 10%;
+            background-color: rgb(235, 219, 243);
+            padding-top: 10px;
+        }
+        .swiper-button-prev {
+                font-size: 40px;
+                position: absolute;
+                left: 3%;
+                top: 65%;
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .swiper-button-next {
+                font-size: 40px;
+                position: absolute;
+                top: 65%;
+                left: 95%;
+            }
+
+        @media screen and (max-width:400px) {
+            body {
+                background-color: beige;
+            }
+
+            .page1>h1 {
+                font-size: 17px;
+            }
+
+            .page1 {
+                background-size: 380px;
+                background-repeat: no-repeat;
+                height: 300px;
+            }
+
+            .page1>img {
+                height: 8px;
+                position: absolute;
+                top: -4.5%;
+                right: 87%;
+            }
+
+            .page1>h2 {
+                font-size: 9px;
+                margin-left: 14%;
+                margin-top: 2.5%;
+            }
+
+            #flip {
+                margin-left: 20%;
+                margin-top: 0%;
+                height: 12px;
+                width: 55px;
+                font-size: 5px;
+            }
+
+            .page1> #panel{
+                width: 100px;
+                font-size: 5px;
+            }
+
+            header>ul {
+                position: absolute;
+                top: 35%;
+                background-color: rgb(239, 234, 226);
+                height: 15px;
+                display: flex;
+                column-gap: 6px;
+                list-style: none;
+                font-size: 9px;
+                padding-left: 3px;
+                padding-bottom: 20px;
+            }
+
+            .head {
+                /* top: 42%; */
+                width: 100%;
+                margin-top: -50px;
+                padding-top: 0;
+                margin-bottom: 50px;
+                font-size: 30px;
+                text-decoration: underline;
+            }
+
+            h1 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .main {
+                display: grid;
+                grid-template-columns: 200px;
+                padding-left: 100px;
+                background-color: beige;
+                padding-top: 0%;
+            }
+
+            .card>img {
+                height: 150px;
+                width: 150px;
+                margin-top: 0%;
+
+            }
+
+            .card>h1 {
+                display: flex;
+            }
+
+            .swiper {
+                height: 300px;
+            }
+
+            .swiper>h1 {
+                font-size: 20px;
+                margin-left: 15px;
+                width: 300px;
+            }
+
+            .swiper-slide>img {
+                height: 200px;
+                width: 380px;
+            }
+
+            .swiper-button-prev {
+                font-size: 10px;
+                position: absolute;
+                left: 0%;
+                top: 75%;
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .swiper-button-next {
+                font-size: 10px;
+                position: absolute;
+                top: 75%;
+                left: 40%;
+            }
+
+            .smthing>h1 {
+                font-size: 20px;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                padding-left: 70px;
+                background-color: rgb(235, 219, 243);
+                padding-top: 10px;
+            }
+
+            .bake>img {
+                height: 200px;
+                width: 200px;
+                padding-left: 60px;
+
+            }
+
+            .bake {
+                column-gap: 2px;
+            }
+
+            .smthing {
+                display: flex;
+                flex-direction: column;
+                padding-left: 0%;
+               
+            }
+
+
+            .smthing2>h1 {
+                font-size: 20px;
+                font-family: 'Times New Roman', Times, serif;
+                padding-left: 5px;
+                padding-top: 15px;
+                background-color: rgb(244, 229, 210);
+
+            }
+
+
+            .smthing2 {
+                display: flex;
+                flex-direction: column;
+                padding-left: 20px;
+                background-color: rgb(244, 229, 210);
+            }
+
+            .b4>img {
+                height: 180px;
+                width: 180px;
+                padding-left: 47px;
+                padding-top: 10px;
+            }
+
+            .b5>img {
+                height: 180px;
+                width: 180px;
+                padding-left: 60px;
+            }
+
+            .last {
+                padding-left: 12%;
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+            }
+
+            .pestrie>img {
+                padding-left: 10px;
+                height: 300px;
+                width: 200px;
+            }
+
+            .form {
+                padding-left: 10px;
+                font-size: 20px;
+                height: 390px;
+                width: 200px;
+
+            }
+
+            input {
+                height: 20px;
+                font-size: 10px;
+                padding: 2px;
+            }
+
+            fieldset {
+                padding: 20px;
+            }
+
+           
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page1">
+        <h1>Creamyy creation cakes...</h1>
+
+        <img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266_640.jpg"
+            alt="@creamyy_creations07💗">
+        <h2>@creamyy_creations07💗</h2>
+        <button id="flip">⏮ Tap here ⏭</button>
+        <script>
+            $(document).ready(function () {
+                $("#flip").click(function () {
+                    $("#panel").slideDown("slow");
+                });
+            });
+        </script>
+        <ul id="panel">
+
+            <li>Hello..🙋‍♀️I am a homebaker. <br>I made various types of cakes,pestries in every flavour.</li><br>
+            <li>My every cake has story to tell.</li><br>
+            <li>Light and Fluffy Texture.</li><br>
+            <li>Memorable and Unique Twist.</li><br>
+            <li>Best Hygiene.</li><br>
+            <li>Affordable prizes.</li><br>
+            <li>I completed 100+ cake orders.</li><br>
+            <li>Customise cakes are available.</li>
+        </ul>
+    </div>
+
+    <h1 class="head">Cakes gallery</h1>
+    <div class="main">
+
+
+        <div class="card">
+            <h1>Black forest</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalMmEkExgTgEULRIPayb39ojFBqXot4_GWg&usqp=CAU"
+                alt="">
+        </div>
+        <div class="card">
+            <h1>Rasmalai cake</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGwFFzsUGUDbGZN_T5THN5DA84p778zIK9P9Fevq_ef_60unVXTZqJUQpCthHCYLOQxSI&usqp=CAU"
+                alt="">
+        </div>
+        <div class="card">
+            <h1>Red velvet cake</h1>
+            <img src="https://i0.wp.com/www.bakingbond.co.in/wp-content/uploads/2023/03/Red_Velvet_Cake_03.jpg?fit=520%2C520&ssl=1"
+                alt="">
+        </div>
+
+        <div class="card">
+            <h1>Doll cake</h1>
+            <img src="https://i0.wp.com/thecakeworld.shop/wp-content/uploads/2021/04/Pink-Swirls-Doll-Cake.jpg?fit=700%2C800&ssl=1"
+                alt="">
+        </div>
+        <div class="card">
+            <h1>Cartoon theme </h1>
+            <img src="https://assets.winni.in/product/primary/2014/6/25972.jpeg?dpr=1&w=1000" alt="">
+        </div>
+        <div class="card">
+            <h1>Photo cake</h1>
+            <img src="https://assets.winni.in/product/primary/2022/10/76240.png?dpr=2&w=220" alt="">
+        </div>
+        <div class="card">
+            <h1>Pinata cake</h1>
+            <img src="https://assets.flowersnfruits.com/uploads/product-pics/vanilla-pinata-cake.jpg" alt="">
+        </div>
+        <div class="card">
+            <h1>Surprise box</h1>
+            <img src="https://www.kanpurgifts.com/admin/product_images/surprise-box-cake.jpg" alt="">
+        </div>
+        <div class="card">
+            <h1>Bomb cake</h1>
+            <img src="https://www.cakeplaza.in/cdn/shop/products/BombCake3_x700.jpg?v=1632839561" alt="">
+        </div>
+        <div class="card">
+            <h1>Engagement cake</h1>
+            <img src="data:image/jpeg;base64,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"
+                alt="">
+        </div>
+        <div class="card">
+            <h1>Bride to be</h1>
+            <img src="https://i.pinimg.com/736x/a6/79/67/a67967c0503e7cbe02e89bc9b848781b.jpg" alt="">
+        </div>
+        <div class="card">
+            <h1>Baby shower </h1>
+            <img src="https://legateaucakes.com/cdn/shop/files/1kg-fruit-of-forest-egg-oh-baby-cake-41315972677911.jpg?v=1687462763&width=533"
+                alt="">
+        </div>
+
+
+    </div>
+
+    </div>
+    <div class="swiper">
+        <h1>🍩Baking process🍰</h1>
+
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="https://i.insider.com/5d02a704daa48241e03ef192?width=700" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://media.istockphoto.com/id/1131330399/photo/confectioner-woman-making-delicious-cream-for-cupcakes.jpg?s=612x612&w=0&k=20&c=vUVlu8HuyZtKQiP6hFKO-CFUeO2a47ALrh9j-ya-bzk="
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://www.bhg.com/thmb/QoxVJrAGOSUztURJUsV5l2w_hz0=/1500x0/filters:no_upscale():strip_icc()/recipes-how-to-bake-how-to-make-a-cake-12-7b9805cf02de49e4a7a054b2a28c1bc8.jpg"
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://media.smallbiztrends.com/2023/07/How-to-Start-a-Cake-Business-Bake-Your-Way-to-Profit.png"
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://img.freepik.com/free-photo/confectioner-uniform-decorates-cake_1157-33237.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://images.slurrp.com/prodrich_article/is33r8rlz2.webp?impolicy=slurrp-20210601&width=880&height=500"
+                    alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://i.ytimg.com/vi/zBDJrXBNThw/maxresdefault.jpg" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2lcuieiPKGupar8tcQ1f6WFZLsiOZYzLv6YJ4HMhofw1az3DxfV0lXvA89w_Gi8uNEJU&usqp=CAU"
+                    alt="">
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+    </div>
+
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            slidesPerView: 1,
+            
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            
+        });
+    </script>
+    </swiper>
+    <br> <br>
+    <div class="smthing">
+        <h1> Looking for something new:</h1>
+
+        <div class="bake">
+            <img src="cake-1.png" height="300px" width="300px" alt="">
+            <div class="text">
+                <u>
+                    <h1
+                        style="text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-left: 130px;margin: auto;">
+                        Cup cakes</h1>
+                </u>
+            </div>
+        </div>
+        <div class="bake">
+            <img src="cake-2.png" height="300px" width="300px" alt="">
+            <div class="text">
+                <u>
+                    <h1
+                        style="text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-left: 130px;">
+                        Jar cakes</h1>
+                </u>
+            </div>
+        </div>
+        <div class="bake">
+            <img src="cake-3.png" height="300px" width="300px" alt="">
+            <div class="text">
+                <u>
+                    <h1
+                        style="text-align: center;font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;padding-left: 130px;padding-bottom: 30px;">
+                        Pestries</h1>
+                </u>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div class="smthing2">
+        <h1>Surprise purpose:</h1>
+        <div class="b4">
+            <img src="https://cdn.igp.com/f_auto,q_auto,t_prodm/products/p-sweet-and-upbeat-jar-cake-hamper-for-the-best-father-179582-m.jpg"
+                height="400px" width="480px" style="margin-left: 20px;" alt="">
+            <h1 style="text-align: center;padding-bottom: 50px;">Gift hamper</h1>
+        </div>
+        <div class="b5">
+            <img src="https://pinno.app/api/internal/cdb/contents/c7535f96-a674-4cb3-b8e0-3fb7470b429d/182304/135061"
+                height="400px" width="480px" alt="">
+            <h1 style="text-align: center;padding-bottom: 50px;">Cake hamper</h1>
+        </div>
+    </div>
+    <div class="last">
+        <div class="pestrie">
+            <img src="https://www.cookingclassy.com/wp-content/uploads/2022/08/ice-cream-cake-11.jpg" height="600px"
+                width="550px" style="border-radius: 0px 80px 0px;">
+        </div>
+        <div class="form">
+            <form>
+                <fieldset>
+                    <legend>Information </legend>
+                    <label>My Name :</label> <br>
+                    <input type="text" placeholder="Kalyani Sapkal"> <br> <br>
+                    <label>My Contact:</label> <br>
+                    <input type="text" placeholder="+91 7066857700"> <br> <br>
+                    <label> Insta Handle:</label> <br>
+                    <input type="text" placeholder="@creamyy_creations07💗">
+                    <h1 style="font-size: 20px;text-align: center;padding-top: 15px;">Thank You🥰</h1>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
