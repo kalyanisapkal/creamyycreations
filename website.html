@@ -422,8 +422,8 @@
             }
 
            #panel{
-                width:130px
-                font-size: 3px;
+                width:130px;
+                font-size:3px;
             }
 
             header>ul {
@@ -630,7 +630,7 @@
 
         <div class="card">
             <h1>Black forest</h1>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQalMmEkExgTgEULRIPayb39ojFBqXot4_GWg&usqp=CAU"
+            <img src="https://5.imimg.com/data5/EU/TS/GLADMIN-60144847/black-forest-cake-500x500.png"
                 alt="">
         </div>
         <div class="card">
@@ -667,7 +667,7 @@
         </div>
         <div class="card">
             <h1>Bomb cake</h1>
-            <img src="https://www.cakeplaza.in/cdn/shop/products/BombCake3_x700.jpg?v=1632839561" alt="">
+            <img src="https://luvflowercake.com/wp-content/uploads/2022/04/Capture2.png" alt="">
         </div>
         <div class="card">
             <h1>Engagement cake</h1>
@@ -680,7 +680,7 @@
         </div>
         <div class="card">
             <h1>Baby shower </h1>
-            <img src="https://legateaucakes.com/cdn/shop/files/1kg-fruit-of-forest-egg-oh-baby-cake-41315972677911.jpg?v=1687462763&width=533"
+            <img src="https://img.thecdn.in/371598/SKU-0059_0-1719411378594.png?width=600&format=webp"
                 alt="">
         </div>
 
@@ -799,21 +799,41 @@
             <img src="https://www.cookingclassy.com/wp-content/uploads/2022/08/ice-cream-cake-11.jpg" height="600px"
                 width="550px" style="border-radius: 0px 80px 0px;">
         </div>
-        <div class="form">
+        <!-- <div class="form">
             <form>
                 <fieldset>
                     <legend>Information </legend>
-                    <label>My Name :</label> <br>
-                    <input type="text" placeholder="Kalyani Sapkal"> <br> <br>
-                    <label>My Contact:</label> <br>
-                    <input type="text" placeholder="+91 7066857700"> <br> <br>
-                    <label> Insta Handle:</label> <br>
-                    <input type="text" placeholder="@creamyy_creations07💗">
-                    <h1 style="font-size: 20px;text-align: center;padding-top: 15px;">Thank You🥰</h1>
+                    <label>Customer Name :</label> <br>
+                    <input type="text"> <br> <br>
+                    <label>Contact:</label> <br>
+                    <input type="text" > <br> <br>
+                    <label> Order details:</label> <br>
+                    <input type="text">
+                    <button type="submit" style="margin-left: 100px; margin-top:20px; display: flex; justify-content: center; align-items: center;  font-size: medium; background-color: antiquewhite; color: black; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+                        Place order
+                    </button>
+                    
+                    <h1 style="font-size: 20px;padding-top: 15px; margin-left: 100px;">Thank You🥰</h1>
                 </fieldset>
 
-            </form>
-
+            </form> -->
+            <div class="form">
+                <form action="submit_form.php" method="POST">
+                    <fieldset>
+                        <legend>Information</legend>
+                        <label>Customer Name :</label> <br>
+                        <input type="text" name="name"  required> <br> <br>
+        
+                        <label>Contact:</label> <br>
+                        <input type="text" name="phone"  required> <br> <br>
+                        <label>Order Details :</label> <br>
+                        <input type="text" name="orderdetails"  required> <br> <br>
+                        <input type="submit" value="Place Order" placeholder="Place Order" style="margin-left: 100px; display: flex; justify-content: center; align-items: center;">
+                        <h1 style="font-size: 20px;text-align: center;padding-top: 5px;">Thank You🥰</h1>
+    
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
 
